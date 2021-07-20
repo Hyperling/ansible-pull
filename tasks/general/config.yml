@@ -1,0 +1,16 @@
+---
+# Create users' local config files for General.
+# May stop using groups and just use config files to define workstation, server, etc??
+# Then the hosts file will basically just contain [everything] with localhost.
+
+- name: General | Config Files | Create Hierarchy
+  blockinfile:
+    path: "{{ item }}"
+    block: |
+      {{ config_comment_generic }}
+    marker: '# {mark} MANAGED BY ANSIBLE'
+    state: present
+    create: yes
+    backup: yes
+  loop: # These need to be variables, need to figure out folder name first.
+    - "/home/ling/.provision_config/generic.txt"
