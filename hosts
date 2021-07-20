@@ -16,6 +16,9 @@ freeboy branch=dev
 ;
 ;  gaming : Define for installation of gaming software (Steam, Lutris)
 ;
+; cycling : Define for installation of cycling software (Zwift)
+;             CURRENTLY MAC-OS ONLY
+;
 ;     rdp : Define for installation of gaming software (Steam, Lutris)
 ;             CURRENTLY FREEBSD-ONLY
 ;
