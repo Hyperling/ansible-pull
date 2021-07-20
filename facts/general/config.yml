@@ -1,6 +1,6 @@
 ---
 # Variables for users' local config files.
 
-- name: Facts | General | Config Files | Set 1
+- name: General | Facts | Config Files | Set 1
   file:
     config_comment_generic: "# Add any value below this comment to set the property to true."
