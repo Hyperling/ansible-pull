@@ -12,5 +12,4 @@
     state: present
     create: yes
     backup: yes
-  loop: # These need to be variables, need to figure out folder name first.
-    - "/home/ling/.provision_config/generic.txt"
+  loop: "{{ config_files }}"

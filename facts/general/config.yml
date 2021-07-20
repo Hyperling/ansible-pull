@@ -1,6 +1,36 @@
 ---
 # Variables for users' local config files.
 
-- name: General | Facts | Config Files | Set 1
-  file:
+- name: General | Facts | Config Files | Basic Vars
+  set_facts:
+    config_path: "/home/ling/.my_config"
+    config_file_ext: ".txt"
     config_comment_generic: "# Add any value below this comment to set the property to true."
+
+
+- name: General | Facts | Config Files | Config File Vars
+  set_facts:
+    general_branch: "{{ config_path }}"/general/branch{{ config_file_ext }}"
+
+    workstation_toggle: "{{ config_path }}/workstation/toggle{{ config_file_ext }}"
+    workstation_coding: "{{ config_path }}/workstation/coding{{ config_file_ext }}"
+    workstation_editing: "{{ config_path }}/workstation/editing{{ config_file_ext }}"
+    workstation_gaming: "{{ config_path }}/workstation/toggle{{ config_file_ext }}"
+    workstation_rdp: "{{ config_path }}/workstation/rdp{{ config_file_ext }}"
+    workstation_vnc: "{{ config_path }}/workstation/vnc{{ config_file_ext }}"
+
+    server_toggle: "{{ config_path }}"/server/toggle{{ config_file_ext }}"
+
+
+- name: General | Facts | Config Files | Config File List
+  set_facts:
+    config_files:
+      - {{ general_branch }}
+      - {{ workstation_toggle }}
+      - {{ workstation_coding }}
+      - {{ workstation_editing }}
+      - {{ workstation_gaming }}
+      - {{ workstation_rdp }}
+      - {{ workstation_vnc }}
+      - {{ server_toggle }}
+
