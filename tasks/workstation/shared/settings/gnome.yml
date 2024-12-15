@@ -17,7 +17,6 @@
                       , 'org.godotengine.Godot.desktop'
                       , 'org.shotcut.Shotcut.desktop'
                       , 'io.lmms.LMMS.desktop'
-                      , 'org.rncbc.qsynth.desktop'
                       , 'io.lbry.lbry-app.desktop', 'lbry.desktop'
                       , 'org.signal.Signal.desktop', 'signal-desktop.desktop'
                       , 'im.riot.Riot.desktop'
