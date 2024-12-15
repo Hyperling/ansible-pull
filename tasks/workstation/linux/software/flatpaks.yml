@@ -52,8 +52,8 @@
       - { app: "org.gimp.GIMP", name: "gimp", extra: "" }
       - { app: "org.openshot.OpenShot", name: "openshot", extra: "" }
       - { app: "org.tenacityaudio.Tenacity", name: "tenacity", extra: "" }
-      - { app: "org.rncbc.qsynth", name: "qsynth", extra: "" }
       - { app: "io.lmms.LMMS", name: "lmms", extra: "" }
+      - { app: "net.sourceforge.VMPK", name: "vmpk", extra: "" }
     flatpaks_gaming:
       - { app: "com.valvesoftware.Steam", name: "steam", extra: "" }
       - { app: "com.play0ad.zeroad", name: "zeroad", extra: "" }
@@ -74,6 +74,7 @@
       - { app: "io.lbry.lbry-app", name: "lbry", extra: "dbus-launch" } # No longer supported, noticed 2023-09-01.
       - { app: "chat.delta.desktop", name: "deltachat", extra: "" } # No longer used, removed 2023-12-18.
       - { app: "org.gnome.Geary", name: "geary", extra: "" } # No longer used, removed 2024-12-15
+      - { app: "org.rncbc.qsynth", name: "qsynth", extra: "" } # 2024-12-15, Not worth the setup, use LMMS or VMPK.
 
 # Generic #
 
