@@ -40,7 +40,6 @@
       - { app: "org.signal.Signal", name: "signal", extra: "" }
       - { app: "org.mozilla.firefox", name: "firefox-flatpak", extra: "" }
       - { app: "com.transmissionbt.Transmission", name: "transmission", extra: "" }
-      - { app: "org.gnome.Geary", name: "geary", extra: "" }
     flatpaks_coding:
       - { app: "com.vscodium.codium", name: "codium", extra: "" }
       - { app: "com.google.AndroidStudio", name: "android-studio", extra: "" }
@@ -53,6 +52,8 @@
       - { app: "org.gimp.GIMP", name: "gimp", extra: "" }
       - { app: "org.openshot.OpenShot", name: "openshot", extra: "" }
       - { app: "org.tenacityaudio.Tenacity", name: "tenacity", extra: "" }
+      - { app: "org.rncbc.qsynth", name: "qsynth", extra: "" }
+      - { app: "io.lmms.LMMS", name: "lmms", extra: "" }
     flatpaks_gaming:
       - { app: "com.valvesoftware.Steam", name: "steam", extra: "" }
       - { app: "com.play0ad.zeroad", name: "zeroad", extra: "" }
@@ -72,6 +73,7 @@
       # End 2022-11-20 #
       - { app: "io.lbry.lbry-app", name: "lbry", extra: "dbus-launch" } # No longer supported, noticed 2023-09-01.
       - { app: "chat.delta.desktop", name: "deltachat", extra: "" } # No longer used, removed 2023-12-18.
+      - { app: "org.gnome.Geary", name: "geary", extra: "" } # No longer used, removed 2024-12-15
 
 # Generic #
 
