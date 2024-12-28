@@ -453,8 +453,12 @@
         ls -d ~/Code/* | while read project; do
           echo "*** `basename $project` ***"
           cd $project
-          git pull
-          git push
+          if [[ -d .git ]]; then
+            git pull
+            git push
+          else
+            echo "Not a Git project, skipping!"
+          fi
         done
       '
     alias_code_reset: |
