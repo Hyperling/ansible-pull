@@ -520,7 +520,7 @@
         echo -e "\nDone!\n"
       }
     alias_clone: |
-      alias clone="rsync -auPh --delete"
+      alias clone="rsync -auPhz --delete"
     export_hyperling: |
       export HYPERLING6="2a07:e03:3:80::1"
       export HYPERLING4="185.130.47.173"
