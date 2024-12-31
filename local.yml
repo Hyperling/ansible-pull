@@ -124,9 +124,6 @@
       - include_tasks: tasks/workstation/linux/software/packages.yml
         when: ansible_system == "Linux"
 
-      - include_tasks: tasks/workstation/linux/software/flatpaks.yml
-        when: ansible_system == "Linux" and flatpak_distro
-
       - include_tasks: tasks/workstation/linux/software/brave.yml
         when: ansible_pkg_mgr in ("apt", "dnf", "zypper") and not mobile
 
@@ -155,6 +152,10 @@
         when: vnc == true
 
       - include_tasks: tasks/workstation/shared/settings/services.yml
+
+      # Final Tasks (SLOW) #
+      - include_tasks: tasks/workstation/linux/software/flatpaks.yml
+        when: ansible_system == "Linux" and flatpak_distro
 
       when: workstation == true
 
