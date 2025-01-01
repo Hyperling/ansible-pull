@@ -16,6 +16,7 @@
                       , 'im.riot.Riot.desktop'
                       , 'org.telegram.desktop.desktop'
                       , 'com.discordapp.Discord.desktop'
+                      , 'com.vscodium.codium.desktop'
                       , 'com.visualstudio.code-oss.desktop', 'code-oss.desktop'
                       , 'com.google.AndroidStudio.desktop'
                       , 'org.godotengine.Godot.desktop'
