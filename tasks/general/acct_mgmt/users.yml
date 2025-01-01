@@ -107,6 +107,16 @@
   become_user: "{{ user }}"
   when: user_user.home != ""
 
+- name: General | Account Management | Users | User | Create Folders | Coding
+  file:
+    path: "{{ item }}"
+    state: directory
+    mode: '0755'
+  loop:
+    - "{{ user_user.home }}/Code"
+  become_user: "{{ user }}"
+  when: user_user.home != "" and coding == true
+
 - name: General | Account Management | Users | Home Permissions
   shell: "chmod 700 {{ user_user.home }}/../*"
 
