@@ -17,9 +17,7 @@
                       , 'org.telegram.desktop.desktop'
                       , 'com.discordapp.Discord.desktop'
                       , 'com.vscodium.codium.desktop'
-                      , 'com.visualstudio.code-oss.desktop', 'code-oss.desktop'
                       , 'com.google.AndroidStudio.desktop'
-                      , 'org.godotengine.Godot.desktop'
                       , 'org.shotcut.Shotcut.desktop'
                       , 'io.lmms.LMMS.desktop'
                       , 'io.lbry.lbry-app.desktop', 'lbry.desktop'
@@ -28,11 +26,15 @@
     dconf_terminal: gnome-terminal
     dconf_theme: Adwaita-dark
     dconf_icons: Adwaita
-# 2024-01-28 No longer using local email clients.
+# 2024-01-28 Not currently using local email clients.
 #, 'org.gnome.Evolution.desktop'
 #, 'chat.delta.desktop.desktop', 'deltachat.desktop'
 #, 'org.gnome.Geary.desktop'
 #, 'org.mozilla.Thunderbird.desktop'
+# 2025-01-01
+# Reduce the amount of icons on the sidebar, things that may get added back.
+#, 'com.visualstudio.code-oss.desktop', 'code-oss.desktop'
+#, 'org.godotengine.Godot.desktop'
 
 - name: Workstation | Account Management | GNOME | Facts (NixOS)
   set_fact:
