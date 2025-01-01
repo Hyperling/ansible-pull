@@ -55,6 +55,7 @@
     - vim
     - "{{ cron }}"
     - "{{ encfs }}"
+    - rsync
     state: present
 
 - name: General | Software | Packages | Install Software (DEV)
